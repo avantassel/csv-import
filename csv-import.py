@@ -162,6 +162,7 @@ def read_inputfile():
             rowcounter += 1
         #write any remaining rows to the database
         updatedb(requestdata)
+        print 'Added '+str(rowcounter)+' records'
     return(fieldnames)
 
 def make_view(fieldname, activate = False):
